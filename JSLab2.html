@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSLab#02</title>
+    </head>
+    <body>
+        <script>
+            var i = 23;
+            i++;                            // Returns 23; possess 24
+            i;                              // Returns 24
+            i--;                            // Returns 24; possess 23
+            ++i;                            // Returns n possess 24
+            alert(i++);                     // Returns 24; possess 25
+            alert(++i);                     // Returns n possess 26
+
+            alert(2+3-8+16*6/3+8);          // 37  (following BODMAS)
+            alert(1<2<3);                   // Dry run ==> (1<2) = True; (True=1), (1<3) output: True
+            alert(3>2>1);                   // (3>2) = True ==> 1, (1>1) output: False
+
+            // Task: Roots of Quadratic Equation
+            var a = prompt("Enter a value for a");
+            var b = prompt("Enter a value for b");
+            var c = prompt("Enter a value for c");
+            x = (-b + Math.sqrt(Math.pow(b,2) -4*a*c)) / 2*a;
+            y = (-b - Math.sqrt(Math.pow(b,2) -4*a*c)) / 2*a;
+            alert("Roots of Quadratic Equation are:     " + x+"     "+y);
+            </script>
+        </body>
+</html>
